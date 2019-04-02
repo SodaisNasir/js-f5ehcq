@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Zatiq Test</title>
+	<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+	<!--Main division -->
+<div class="Main-Div">
+	<!--Division for the comboBox -->
+	<div class="ComboBox_Div">
+		<SELECT id="Currency" class="comboBox">
+			<option value="EUR/USD">EUR/USD</option>
+			<option value="EUR/USD">EUR/USD</option>
+			<option value="EUR/GBP">EUR/GBP</option>
+			<option value="USD/CAD">USD/CAD</option>
+			<option value="AUD/CAD">AUD/CAD</option>
+			<option value="USD/JPY">USD/JPY</option>
+
+		</SELECT>
+	</div>
+	<!--Division for the price generators -->
+	<div class="PriceGenerator_Div">
+		<div class="BidBtn_Div">
+			<h1 class="Generated_Price"><span id="BidPrice"></span></h1>
+  		    <button class="Btn Bid_Btn_Color" onclick="Addition('Bid')">Bid</button>
+		</div>
+
+		
+		<div class="AskBtn_Div">
+			<h1 class="Generated_Price" id="AskPrice"></h1>
+  		    <button class="Btn Ask_Btn_Color" onclick="Addition('Ask')">Bid</button>
+		</div>
+	</div>
+
+
+</div>
+<div class="Results_Div" id="List"><center><h1>Bidding History</h1></center></div>
+</body>
+</html>	<script src="javascript.js"></script>
